@@ -1,15 +1,19 @@
 import Transition from "@/components/Transition";
 import Head from "next/head";
-import React, { useEffect, useRef } from "react";
-import Sunset from "../public/Images/sunset.jpg";
-import MessageLogo from "../public/Images/message.png";
+import React, { useRef } from "react";
+import Sunset from "public/images/sunset.jpg";
+import MessageLogo from "public/images/message.png";
 import { easeInOut, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-function contact() {
+function Contact() {
+  const formMessage = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const msgRef = useRef();
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,18 +24,6 @@ function contact() {
     } else if (msgRef.current.value < 1) {
       alert("Please Enter a message !!");
     } else {
-      useEffect(() => {
-        form.current.addEventListener("submit", (e) => {
-          e.preventDefault();
-          formMessage.current.classList.add("show");
-          setTimeout(() => form.current.submit(), 2000);
-          console.log(
-            nameRef.current.value,
-            emailRef.current.value,
-            msgRef.current.value
-          );
-        });
-      });
       emailjs
         .sendForm(
           "service_75b8cf5",
@@ -47,13 +39,12 @@ function contact() {
             console.log(err.text);
           }
         );
+      formMessage.current.classList.add("show");
+      setTimeout(() => {
+        formMessage.current.classList.remove("show");
+      }, 2000);
     }
   };
-
-  const formMessage = useRef();
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const msgRef = useRef();
 
   return (
     <div id="contact">
@@ -181,4 +172,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

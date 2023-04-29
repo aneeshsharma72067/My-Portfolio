@@ -2,16 +2,16 @@ import Transition from "@/components/Transition";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import InsightImage from "../public/Images/Insight.png";
-import PurplePortfolio from "../public/Images/Portfolio-purple.png";
-import BeatsImage from "../public/Images/Beats.png";
-import Ecommerce from "../public/Images/E-commerce.png";
-import TravelImage from "../public/Images/Travel.png";
-import PortfolioJoseph from "../public/Images/Portfolio-Joseph.png";
+import InsightImage from "public/images/Insight.png";
+import PurplePortfolio from "public/images/Portfolio-purple.png";
+import BeatsImage from "public/images/Beats.png";
+import Ecommerce from "public/images/E-commerce.png";
+import TravelImage from "public/images/Travel.png";
+import PortfolioJoseph from "public/images/Portfolio-Joseph.png";
 import Footer from "@/components/Footer";
 import { easeIn, easeInOut, motion } from "framer-motion";
 
-function projects() {
+function Projects() {
   return (
     <div id="projects">
       <Head>
@@ -218,4 +218,4 @@ function projects() {
   );
 }
 
-export default projects;
+export default Projects;

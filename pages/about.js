@@ -1,20 +1,20 @@
 import Transition from "@/components/Transition";
 import Image from "next/image";
-import ProfilePic from "../public/Images/profile.jpg";
-import DesignIcon from "../public/Images/icon-design.png";
+import ProfilePic from "public/images/profile.jpg";
+import DesignIcon from "public/images/icon-design.png";
 import Head from "next/head";
 import Skill from "@/components/Skill";
-import HTMLCSS from "../public/Images/html-css.png";
+import HTMLCSS from "public/images/html-css.png";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
-import JS from "../public/Images/javascript.svg";
-import ReactJS from "../public/Images/react-native.svg";
-import NextJS from "../public/Images/nextjs.svg";
-import NodeJS from "../public/Images/nodejs.svg";
-import Tailwind from "../public/Images/tailwindcss.svg";
-import Bootstrap from "../public/Images/bootstrap.svg";
-import MongoDB from "../public/Images/mongodb.svg";
-import Figma from "../public/Images/figma.svg";
+import JS from "public/images/javascript.svg";
+import ReactJS from "public/images/react-native.svg";
+import NextJS from "public/images/nextjs.svg";
+import NodeJS from "public/images/nodejs.svg";
+import Tailwind from "public/images/tailwindcss.svg";
+import Bootstrap from "public/images/bootstrap.svg";
+import MongoDB from "public/images/mongodb.svg";
+import Figma from "public/images/figma.svg";
 
 const skillIconVariants = {
   inviewport: {
@@ -34,7 +34,7 @@ function About() {
       <Transition />
       <main>
         <div className="main__head">
-          I'm <span id="name">Aneesh</span>
+          I&apos;m <span id="name">Aneesh</span>
         </div>
         <div className="about__content">
           <div className="about__image">
@@ -45,7 +45,7 @@ function About() {
               I am a second year{" "}
               <span className="primary-text">Computer Science</span> Engineering
               student in <span id="country">India</span>. I work as a freelance
-              web developer, designer and I'm also a competetive programmer
+              web developer, designer and I&apos;m also a competetive programmer
             </div>
             <div className="about_text_para">
               Due to my upbringing in an Indian household, punctuality and hard

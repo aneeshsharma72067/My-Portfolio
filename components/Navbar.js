@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Logo from "../public/Images/Logo.png";
+import Logo from "public/images/Logo.png";
 import Image from "next/image";
-import Instagram from "../public/Images/instagram.svg";
-import Github from "../public/Images/github.svg";
-import Facebook from "../public/Images/facebook.svg";
-import Discord from "../public/Images/discord.svg";
-import Whatsapp from "../public/Images/whatsapp.svg";
+import Instagram from "public/images/instagram.svg";
+import Github from "public/images/github.svg";
+import Facebook from "public/images/facebook.svg";
+import Discord from "public/images/discord.svg";
+import Whatsapp from "public/images/whatsapp.svg";
 
 function CustomLink({ href, title, className = "" }) {
   const router = useRouter();
@@ -37,7 +37,7 @@ function Navbar() {
             <CustomLink href={"/projects"} title="Projects" className="link" />
           </li>
           <li>
-            <CustomLink href={"/contact"} title="Contact" className="link" />
+            <CustomLink href={"/Contact"} title="Contact" className="link" />
           </li>
         </ul>
       </nav>
