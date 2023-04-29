@@ -1,20 +1,20 @@
 import Transition from "@/components/Transition";
 import Image from "next/image";
-import ProfilePic from "public/images/profile.jpg";
-import DesignIcon from "public/images/icon-design.png";
+import ProfilePic from "../public/images/profile.jpg";
+import DesignIcon from "../public/images/icon-design.png";
 import Head from "next/head";
 import Skill from "@/components/Skill";
-import HTMLCSS from "public/images/html-css.png";
+import HTMLCSS from "../public/images/html-css.png";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
-import JS from "public/images/javascript.svg";
-import ReactJS from "public/images/react-native.svg";
-import NextJS from "public/images/nextjs.svg";
-import NodeJS from "public/images/nodejs.svg";
-import Tailwind from "public/images/tailwindcss.svg";
-import Bootstrap from "public/images/bootstrap.svg";
-import MongoDB from "public/images/mongodb.svg";
-import Figma from "public/images/figma.svg";
+import JS from "../public/images/javascript.svg";
+import ReactJS from "../public/images/react-native.svg";
+import NextJS from "../public/images/nextjs.svg";
+import NodeJS from "../public/images/nodejs.svg";
+import Tailwind from "../public/images/tailwindcss.svg";
+import Bootstrap from "../public/images/bootstrap.svg";
+import MongoDB from "../public/images/mongodb.svg";
+import Figma from "../public/images/figma.svg";
 
 const skillIconVariants = {
   inviewport: {

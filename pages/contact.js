@@ -1,8 +1,8 @@
 import Transition from "@/components/Transition";
 import Head from "next/head";
 import React, { useRef } from "react";
-import Sunset from "public/images/sunset.jpg";
-import MessageLogo from "public/images/message.png";
+import Sunset from "../public/images/sunset.jpg";
+import MessageLogo from "../public/images/message.png";
 import { easeInOut, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Logo from "public/images/Logo.png";
+import Logo from "../public/images/Logo.png";
 import Image from "next/image";
-import Instagram from "public/images/instagram.svg";
-import Github from "public/images/github.svg";
-import Facebook from "public/images/facebook.svg";
-import Discord from "public/images/discord.svg";
-import Whatsapp from "public/images/whatsapp.svg";
+import Instagram from "../public/images/instagram.svg";
+import Github from "../public/images/github.svg";
+import Facebook from "../public/images/facebook.svg";
+import Discord from "../public/images/discord.svg";
+import Whatsapp from "../public/images/whatsapp.svg";
 
 function CustomLink({ href, title, className = "" }) {
   const router = useRouter();
