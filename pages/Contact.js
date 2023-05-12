@@ -1,13 +1,14 @@
 import Transition from "@/components/Transition";
 import Head from "next/head";
 import React, { useRef } from "react";
-import Sunset from "../public/images/sunset.jpg";
+import Sunset from "../public/images/sunset.webp";
 import MessageLogo from "../public/images/message.png";
 import { easeInOut, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { CallIcon } from "@/components/Icons";
 
 function Contact() {
   const formMessage = useRef();
@@ -45,7 +46,6 @@ function Contact() {
       }, 2000);
     }
   };
-
   return (
     <div id="contact">
       <Head>
@@ -57,23 +57,16 @@ function Contact() {
         <div className="contact__number">
           <div>Give me a call</div>
           <span>
-            <svg
-              width="40"
-              height="40"
-              fill="#db5447"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.356 2.639a2.181 2.181 0 0 1 3.262.203l2.244 2.883a2.18 2.18 0 0 1 .394 1.867l-.684 2.738a.848.848 0 0 0 .223.804l3.07 3.07a.847.847 0 0 0 .806.223l2.736-.683a2.181 2.181 0 0 1 1.868.393l2.882 2.243a2.18 2.18 0 0 1 .204 3.264l-1.293 1.292c-.925.925-2.307 1.331-3.596.878a23.293 23.293 0 0 1-8.762-5.525 23.292 23.292 0 0 1-5.525-8.762c-.453-1.287-.047-2.67.878-3.596L4.356 2.64Z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+            <CallIcon />
           </span>
           <Link href={"tel:+917206734591"}>+91 72067 34591</Link>
         </div>
-        <Image src={Sunset} className="contact__img" />
+        <Image
+          priority={true}
+          src={Sunset}
+          alt="sunset.png"
+          className="contact__img"
+        />
         <section className="send__message">
           <motion.div
             initial={{ x: "-50%", opacity: 0 }}

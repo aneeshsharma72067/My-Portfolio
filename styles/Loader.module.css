@@ -1,0 +1,113 @@
+/* Atom */
+
+
+.loading_bg{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+}
+
+#loading{
+    z-index: 1;
+}
+#loading .dot {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(189, 195, 199, 1);
+    opacity: 1;
+    animation-name: effect-3;
+    animation-duration: 5s, 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease, linear;
+}
+
+#loading .wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -65px 0 0 -65px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#loading .wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -65px 0 0 -65px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#loading .wrapper::after,
+#loading .wrapper::before {
+    border: 2px solid rgba(189, 195, 199, 0.8);
+}
+
+#loading .wrapper::after {
+    animation-name: effect-3, effect-1;
+    animation-duration: 5s, 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease, linear;
+}
+
+#loading .wrapper::before {
+    animation-name: effect-3, effect-2;
+    animation-duration: 5s, 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease, linear;
+}
+
+@keyframes effect-1 {
+    0% {
+        transform: perspective(1000px) rotate3d(1, 1, 1, 0deg)
+    }
+
+    100% {
+        transform: perspective(1000px) rotate3d(1, 1, 1, 360deg)
+    }
+}
+
+@keyframes effect-2 {
+    0% {
+        transform: perspective(1000px) rotate3d(1, -1, 1, 0deg)
+    }
+
+    100% {
+        transform: perspective(1000px) rotate3d(1, -1, 1, 360deg)
+    }
+}
+
+@keyframes effect-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    25%,
+    75% {
+        opacity: 1
+    }
+}

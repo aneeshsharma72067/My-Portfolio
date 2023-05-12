@@ -1,14 +1,10 @@
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { animate, motion } from "framer-motion";
-import CircleType from "circletype";
 import { useRouter } from "next/router";
+import { CircularText } from "./Icons";
 
 function FixedLinks() {
-  const circleRef = useRef();
-  useEffect(() => {
-    new CircleType(circleRef.current);
-  }, []);
   return (
     <div>
       <div className="mail__link">
@@ -19,19 +15,18 @@ function FixedLinks() {
       </div>
 
       <Link
-        href={"/contact"}
+        href={"/Contact"}
         className="hire__me"
         style={{
-          // display: `${useRouter().asPath === "/contact" ? "none" : "flex"}`,
-          opacity: `${useRouter().asPath === "/contact" ? 0 : 1}`,
+          opacity: `${useRouter().asPath === "/Contact" ? 0 : 1}`,
           pointerEvents: `${
-            useRouter().asPath === "/contact" ? "none" : "auto"
+            useRouter().asPath === "/Contact" ? "none" : "auto"
           }`,
         }}
       >
         Hire Me
-        <div ref={circleRef} className="circle">
-          Web Developer, Web Designer, UI/UX Developer,
+        <div className="circle">
+          <CircularText />
         </div>
       </Link>
     </div>

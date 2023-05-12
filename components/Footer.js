@@ -29,12 +29,16 @@ function Footer() {
           viewport={{ once: true, amount: 0.8 }}
           className="links"
         >
-          <Link href={`github.com`}>Github</Link>
-          <Link href={`github.com`}>Instagram</Link>
-          <Link href={`github.com`}>Discord</Link>
-          <Link href={`github.com`}>Freelancer</Link>
-          <Link href={`github.com`}>Fiverr</Link>
-          <Link href={`github.com`}>Codepen</Link>
+          <Link href={`https://github.com/aneeshsharma72067`}>Github</Link>
+          <Link href={`https://www.instagram.com/aneesh72067/`}>Instagram</Link>
+          <Link href={`https://www.upwork.com/freelancers/~01e2321a0401cf97bb`}>
+            Upwork
+          </Link>
+          <Link href={`https://www.freelancer.com/u/aneesh1024`}>
+            Freelancer
+          </Link>
+          <Link href={` https://www.fiverr.com/aneeshsharma007`}>Fiverr</Link>
+          <Link href={`https://codepen.io/aneesh1024`}>Codepen</Link>
         </motion.div>
       </div>
     </div>

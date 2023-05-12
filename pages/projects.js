@@ -2,26 +2,26 @@ import Transition from "@/components/Transition";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import InsightImage from "../public/images/Insight.png";
-import PurplePortfolio from "../public/images/Portfolio-purple.png";
-import BeatsImage from "../public/images/Beats.png";
-import Ecommerce from "../public/images/E-commerce.png";
-import TravelImage from "../public/images/Travel.png";
-import PortfolioJoseph from "../public/images/Portfolio-Joseph.png";
+import InsightImage from "../public/images/Insight.webp";
+import PurplePortfolio from "../public/images/Portfolio-purple.webp";
+import BeatsImage from "../public/images/Beats.jpg";
+import Ecommerce from "../public/images/E-commerce.webp";
+import TravelImage from "../public/images/Travel.webp";
+import PortfolioJoseph from "../public/images/Portfolio-Joseph.webp";
 import Footer from "@/components/Footer";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 function Projects() {
   return (
     <div id="projects">
       <Head>
-        <title>Aneesh • Projects</title>
+        <title>Aneesh • Designs</title>
       </Head>
       <Transition />
       <main>
         <div className="line"></div>
         <div className="projects__head">
-          My <span className="primary-text">Projects</span>
+          Some of my <span className="primary-text"> Designs</span>
         </div>
         <section className="projects__section">
           <div className="project__row">
@@ -50,7 +50,6 @@ function Projects() {
                 style={{
                   width: "max-content",
                   height: "100%",
-                  marginLeft: "1px",
                 }}
               >
                 <motion.div

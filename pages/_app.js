@@ -4,11 +4,12 @@ import FixedLinks from "@/components/FixedLinks";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Head from "next/head";
-
+import Transition from "@/components/Transition1";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+
   return (
-    <>
+    <Transition>
       <Head>
         <link rel="shortcut icon" href="/Images/favicon.ico" />
         <link
@@ -30,10 +31,10 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Navbar />
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <Component key={router.asPath} {...pageProps} />
       </AnimatePresence>
       <FixedLinks />
-    </>
+    </Transition>
   );
 }
