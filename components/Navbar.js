@@ -97,7 +97,7 @@ function Navbar() {
           <div className="hover__circle"></div>
         </Link>
         <Link
-          href={"https://discordapp.com/users/1884"}
+          href={"https://www.linkedin.com/in/aneesh-sharma-as72067/"}
           target="_blank"
           className="linkedin__logo"
         >
