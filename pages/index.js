@@ -74,7 +74,7 @@ export default function Home() {
           <div className="btn__section">
             <motion.button whileHover={{ scale: "1.2" }}>
               <a
-                href="/Aneesh-Sharma.pdf"
+                href="/Aneesh_Sharma.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
