@@ -5,11 +5,25 @@ import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Transition from "@/components/Transition1";
+import Script from 'next/script';
+
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   return (
     <Transition>
+    
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      ></Script>
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`}
+      </Script>
+        
       <Head>
         <link rel="shortcut icon" href="/Images/favicon.ico" />
         <link
